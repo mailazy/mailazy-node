@@ -1,34 +1,4 @@
-# mailazy-node
-
-> Mailazy NodeJs SDK Client
-
-
-## Table of Contents
-
-* [Install](#install)
-* [Usage](#usage)
-* [License](#license)
-
-
-## Install
-
-[npm][]:
-
-```sh
-npm install mailazy-node
-```
-
-[yarn][]:
-
-```sh
-yarn add mailazy-node
-```
-
-
-## Usage
-
-```js
-const MailazyClient = require('mailazy-node');
+const MailazyClient = require('../index');
 
 const client = new MailazyClient({ accessKey: '', accessSecret: '' });
 
@@ -48,15 +18,3 @@ const fn = async () => {
 }
 
 fn();
-```
-
-## License
-
-[MIT](LICENSE) © Mailazy
-
-
-##
-
-[npm]: https://www.npmjs.com/
-
-[yarn]: https://yarnpkg.com/
