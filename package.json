@@ -2,14 +2,15 @@
   "name": "mailazy-node",
   "description": "Mailazy NodeJs SDK Client",
   "version": "0.0.1",
-  "author": "Kunal <kunal.saini@mailazy.com> ()",
+  "author": "Mailazy",
   "bugs": {
-    "url": "https://github.com/mailazy/mailazy-node/issues",
-    "email": "kunal.saini@mailazy.com"
+    "url": "https://github.com/mailazy/mailazy-node/issues"
   },
-  "contributors": [
-    "Kunal <kunal.saini@mailazy.com> ()"
-  ],
+  "contributors": [{
+    "name": "Mailazy",
+    "email": "support@mailazy.com",
+    "github": "mailazy"
+  }],
   "dependencies": {
     "http2": "^3.3.7"
   },
@@ -17,6 +18,7 @@
     "@commitlint/cli": "latest",
     "@commitlint/config-conventional": "latest",
     "ava": "latest",
+    "babel-eslint": "^10.1.0",
     "codecov": "latest",
     "cross-env": "latest",
     "eslint": "latest",
@@ -30,9 +32,9 @@
     "xo": "latest"
   },
   "engines": {
-    "node": ">= 10"
+    "node": ">= 10.10"
   },
-  "homepage": "https://github.com/mailazy/mailazy-node",
+  "homepage": "https://mailazy.com",
   "keywords": [
     "mailazy",
     "sdk"
@@ -57,6 +59,10 @@
     "space": true,
     "extends": [
       "xo-lass"
-    ]
-  }
+    ],
+    "parser": "babel-eslint"
+  },
+  "files": [
+    "index.js"
+  ]
 }
