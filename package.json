@@ -1,16 +1,18 @@
 {
   "name": "mailazy-node",
   "description": "Mailazy NodeJs SDK Client",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "author": "Mailazy",
   "bugs": {
     "url": "https://github.com/mailazy/mailazy-node/issues"
   },
-  "contributors": [{
-    "name": "Mailazy",
-    "email": "support@mailazy.com",
-    "github": "mailazy"
-  }],
+  "contributors": [
+    {
+      "name": "Mailazy",
+      "email": "support@mailazy.com",
+      "github": "mailazy"
+    }
+  ],
   "dependencies": {
     "http2": "^3.3.7"
   },
