@@ -14,7 +14,7 @@ test('returns itself', (t) => {
 test('sets a config object', (t) => {
   const client = new Client({
     accessKey: 'test-key',
-    accessSecret:'test-secret'
+    accessSecret: 'test-secret'
   });
   t.true(client instanceof Client);
 });

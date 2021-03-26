@@ -6,11 +6,25 @@
 ## Table of Contents
 
 * [Install](#install)
+  * [Prerequisites](#prerequisites)
+  * [Generate Access Keys](#generate-access-keys)
+  * [Install Package](#install-package)
 * [Usage](#usage)
 * [License](#license)
 
 
 ## Install
+
+### Prerequisites
+
+* Node.js version >= 10
+* Mailazy account, [sign up for free](https://app.mailazy.com/signup?source=mailazy-node) to send up to 50,000 email/month free.
+
+### Generate Access Keys
+
+You need a sender/domain authenticated account in order to generate Access Keys from the [Mailazy Console](https://app.mailazy.com/dashboard)
+
+### Install Package
 
 [npm][]:
 
@@ -49,6 +63,7 @@ const fn = async () => {
 
 fn();
 ```
+
 
 ## License
 
