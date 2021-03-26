@@ -61,5 +61,8 @@
       "xo-lass"
     ],
     "parser": "babel-eslint"
-  }
+  },
+  "files": [
+    "index.js"
+  ]
 }
