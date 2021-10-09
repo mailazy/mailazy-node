@@ -1,6 +1,6 @@
-# mailazy-node
+# mailazy-api
 
-> Mailazy NodeJs SDK Client
+> Unofficial Mailazy NodeJs SDK Client with some internal boost (faster & less-buggy)
 
 
 ## Table of Contents
@@ -18,7 +18,7 @@
 ### Prerequisites
 
 * Node.js version >= 10
-* Mailazy account, [sign up for free](https://app.mailazy.com/signup?source=mailazy-node) to send up to 50,000 email/month free.
+* Mailazy account, [sign up for free](https://app.mailazy.com/signup?source=mailazy-api) to send up to 50,000 email/month free.
 
 ### Generate Access Keys
 
@@ -29,20 +29,20 @@ You need a sender/domain authenticated account in order to generate Access Keys 
 [npm][]:
 
 ```sh
-npm install mailazy-node
+npm install mailazy-api
 ```
 
 [yarn][]:
 
 ```sh
-yarn add mailazy-node
+yarn add mailazy-api
 ```
 
 
 ## Usage
 
 ```js
-const MailazyClient = require('mailazy-node');
+const MailazyClient = require('mailazy-api');
 
 const client = new MailazyClient({ accessKey: '', accessSecret: '' });
 
@@ -67,7 +67,7 @@ fn();
 
 ## License
 
-[MIT](LICENSE) © Mailazy
+[MIT](LICENSE) © Mailazy & Angrymouse
 
 
 ##
