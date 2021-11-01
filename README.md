@@ -1,51 +1,42 @@
-# mailazy-api
+# mailazy-node
 
-> Unofficial Mailazy NodeJs SDK Client with some internal boost (faster & less-buggy)
-
+> Mailazy NodeJs SDK Client
 
 ## Table of Contents
-
 * [Install](#install)
   * [Prerequisites](#prerequisites)
   * [Generate Access Keys](#generate-access-keys)
   * [Install Package](#install-package)
 * [Usage](#usage)
 * [License](#license)
-
-
 ## Install
-
 ### Prerequisites
 
 * Node.js version >= 10
-* Mailazy account, [sign up for free](https://app.mailazy.com/signup?source=mailazy-api) to send up to 50,000 email/month free.
+* Mailazy account, [sign up for free](https://app.mailazy.com/signup?source=mailazy-node) to send up to 50,000 email/month free.
 
 ### Generate Access Keys
 
 You need a sender/domain authenticated account in order to generate Access Keys from the [Mailazy Console](https://app.mailazy.com/dashboard)
-
 ### Install Package
-
 [npm][]:
 
 ```sh
-npm install mailazy-api
+npm install mailazy-node
 ```
 
 [yarn][]:
 
 ```sh
-yarn add mailazy-api
+yarn add mailazy-node
 ```
 
 
 ## Usage
 
 ```js
-const MailazyClient = require('mailazy-api');
-
+const MailazyClient = require('mailazy-node');
 const client = new MailazyClient({ accessKey: '', accessSecret: '' });
-
 const fn = async () => {
     try {
         const resp = await client.send({
@@ -60,18 +51,14 @@ const fn = async () => {
         console.log("errror: " + e);
     }
 }
-
 fn();
 ```
 
-
 ## License
 
-[MIT](LICENSE) © Mailazy & Angrymouse
+[MIT](LICENSE) © Mailazy
 
 
 ##
-
 [npm]: https://www.npmjs.com/
-
 [yarn]: https://yarnpkg.com/
