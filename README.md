@@ -2,19 +2,14 @@
 
 > Mailazy NodeJs SDK Client
 
-
 ## Table of Contents
-
 * [Install](#install)
   * [Prerequisites](#prerequisites)
   * [Generate Access Keys](#generate-access-keys)
   * [Install Package](#install-package)
 * [Usage](#usage)
 * [License](#license)
-
-
 ## Install
-
 ### Prerequisites
 
 * Node.js version >= 10
@@ -23,9 +18,7 @@
 ### Generate Access Keys
 
 You need a sender/domain authenticated account in order to generate Access Keys from the [Mailazy Console](https://app.mailazy.com/dashboard)
-
 ### Install Package
-
 [npm][]:
 
 ```sh
@@ -43,9 +36,7 @@ yarn add mailazy-node
 
 ```js
 const MailazyClient = require('mailazy-node');
-
 const client = new MailazyClient({ accessKey: '', accessSecret: '' });
-
 const fn = async () => {
     try {
         const resp = await client.send({
@@ -60,10 +51,8 @@ const fn = async () => {
         console.log("errror: " + e);
     }
 }
-
 fn();
 ```
-
 
 ## License
 
@@ -71,7 +60,5 @@ fn();
 
 
 ##
-
 [npm]: https://www.npmjs.com/
-
 [yarn]: https://yarnpkg.com/
