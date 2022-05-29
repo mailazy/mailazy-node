@@ -53,6 +53,10 @@ class MailazyClient {
           }
         ]
       };
+      
+      if (payload.reply_to){
+        p.reply_to = payload.reply_to;
+      }
 
       if (payload.attachments && payload.attachments.length > 0) {
         p.attachments = payload.attachments;
