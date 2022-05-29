@@ -54,7 +54,7 @@ class MailazyClient {
         ]
       };
       
-      if (payload.reply_to){
+      if (payload.reply_to) {
         p.reply_to = payload.reply_to;
       }
 
