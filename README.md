@@ -49,7 +49,8 @@ const fn = async () => {
       from: 'no-reply@example.com', // Use domain you verified, required
       subject: '', // required
       text: '',
-      html: ''
+      html: '',
+      reply_to: 'someone@example.com'
     });
     console.log('resp: ' + resp);
   } catch (e) {
