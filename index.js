@@ -1,4 +1,4 @@
-const http2 = require('http2');
+const http2 = require('node:http2');
 const packageJson = require('./package.json');
 const process = require('process');
 
@@ -42,20 +42,33 @@ class MailazyClient {
         to: [payload.to],
         from: payload.from,
         subject: payload.subject,
-        content: [
-          {
-            type: 'text/plain',
-            value: payload.text
-          },
-          {
-            type: 'text/html',
-            value: payload.html
-          }
-        ]
+        content: []
       };
-      
+
+      if (payload.text) {
+        p.content.push({
+          type: 'text/plain',
+          value: payload.text
+        });
+      }
+
+      if (payload.html) {
+        p.content.push({
+          type: 'text/html',
+          value: payload.html
+        });
+      }
+
       if (payload.reply_to) {
         p.reply_to = payload.reply_to;
+      }
+
+      if (payload.cc && payload.cc.length > 0) {
+        p.cc = payload.cc;
+      }
+
+      if (payload.bcc && payload.bcc.length > 0) {
+        p.bcc = payload.bcc;
       }
 
       if (payload.attachments && payload.attachments.length > 0) {
